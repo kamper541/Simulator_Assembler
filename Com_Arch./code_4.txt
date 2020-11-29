@@ -1,0 +1,20 @@
+	lw	0	5	mcand
+	lw	0	4	mplier
+	lw	1	7	zero
+	lw	0	2	check
+	lw	0	1	zero
+Start	nand	7	4	6
+	nand	6	6	6
+	beq	7	6	Next
+Back	add	5	5	5
+	add	7	7	7
+	beq	7	2	Done
+	beq	0	0	Start
+Next	add	1	5	1
+	beq	0	0	Start
+	noop			
+Done	halt			
+zero	.fill	0		
+mcand	.fill	32766		
+mplier	.fill	10383		
+check	.fill	16384		

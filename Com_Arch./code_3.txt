@@ -1,0 +1,9 @@
+Start	nand	8	11	9
+	nand	9	9	9
+	beq	8	9	Next
+Back	add	10	10	10
+	add	8	8	8
+	beq	0	0	Start
+Next	add	12	12	10
+	noop			
+Done	halt			

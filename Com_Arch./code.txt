@@ -1,0 +1,10 @@
+	lw	0	1	Five
+	lw	1	2	3
+Start	add	1	2	1
+	beq	0	1	2
+	beq	0	0	Start
+	noop			
+Done	halt			
+Five	.fill	5		
+Neg1	.fill	-1		
+stAddr	.fill	Start		
